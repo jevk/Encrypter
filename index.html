@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Crypter</title>
+    <script src="js/encryption.js"></script>
+    <script src="js/decryption.js"></script>
+</head>
+
+<body>
+    <!-- Form for crypting
+        It should have a text input for the message and secret key and a button to encrypt and decrypt it based on the key, the key should be only 3 characters long -->
+    <form id="crypter">
+        <input type="text" id="message" placeholder="Message">
+        <input type="text" id="key" placeholder="Key">
+        <button type="button" onclick="encrypt()">Encrypt</button>
+        <button type="button" onclick="decrypt()">Decrypt</button>
+    </form>
+
+    <!-- The result should be displayed on the page -->
+    <div id="result">
+        <p id="output"></p>
+    </div>
+</body>
